@@ -4,7 +4,7 @@
 /*
  * Author: Tharny Elilvannan
  * Last Updated: October 10, 2024
- * Purpose: Gives user the altittude, measured every 10 seconds.
+ * Purpose: Gives user the altittude and temperature in Celsius, measured every 10 seconds.
  */
 
 // initiate barometric pressure sensor 
@@ -42,6 +42,13 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print(bmps.readAltitude(seaLevelPressure));
   lcd.println(" meters    ");
+  delay(10000);
+  lcd.clear();
+
+  lcd.print("Temperature: ");
+  lcd.setCursor(0, 1);
+  lcd.print(bmps.readTemperature());
+  lcd.println(" *C        ");
   delay(10000);
   lcd.clear();
 
