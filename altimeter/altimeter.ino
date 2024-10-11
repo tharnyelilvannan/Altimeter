@@ -1,11 +1,11 @@
-#include <Adafruit_BMP085.h>
-#include <LiquidCrystal.h>
-
 /*
  * Author: Tharny Elilvannan
  * Last Updated: October 10, 2024
  * Purpose: Gives user the altittude and temperature in Celsius, measured every 10 seconds.
  */
+
+#include <Adafruit_BMP085.h>
+#include <LiquidCrystal.h>
 
 // initiate barometric pressure sensor 
 Adafruit_BMP085 bmps;
