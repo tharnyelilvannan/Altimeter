@@ -1,6 +1,6 @@
 /*
  * Author: Tharny Elilvannan
- * Last Updated: October 14, 2024
+ * Last Updated: October 17, 2024
  * Purpose: Gives user the altittude and temperature in Celsius, measured every 10 seconds.
  */
 
@@ -11,7 +11,7 @@
 Adafruit_BMP085 bmps;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-// must be updated frequently
+// must be updated and reuploaded frequently
 float seaLevelPressure = 101000;
 
 // setup runs once
